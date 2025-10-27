@@ -1,84 +1,159 @@
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Svářecí pohotovost – Jan Kučera</title>
+  <meta name="description" content="Svářecí pohotovost v Havířově – Jan Kučera. Profesionální svářeč s 20 lety praxe. Ocel, nerez, opravy a zakázková práce." />
+  <meta property="og:title" content="Svářecí pohotovost – Jan Kučera" />
+  <meta property="og:description" content="Profesionální svářeč s 20 lety praxe – ocel i nerez." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="cs_CZ" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
   <style>
+    :root {
+      --main-color: #f1c40f;
+      --dark: #222;
+      --light-bg: #f5f5f5;
+      --white: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      background: var(--light-bg);
+      color: var(--dark);
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      line-height: 1.7;
     }
+
     header {
-      background: #222;
-      color: #fff;
+      background: linear-gradient(135deg, var(--dark), #333);
+      color: var(--white);
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
+      position: relative;
+      overflow: hidden;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
     }
+
     header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.1rem;
-      color: #ccc;
+      margin-top: 0.5rem;
+      color: #ddd;
     }
+
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 2rem auto;
-      background: #fff;
+      background: var(--white);
       padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     }
+
     h2 {
-      color: #333;
-      border-bottom: 2px solid #f1c40f;
-      padding-bottom: 0.5rem;
+      color: var(--dark);
+      border-left: 6px solid var(--main-color);
+      padding-left: 0.7rem;
+      margin-bottom: 1rem;
     }
+
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✔️";
+      margin-right: 0.5rem;
+      color: var(--main-color);
+    }
+
     .contact {
       text-align: center;
     }
-    .contact a {
+
+    .contact a.button {
       display: inline-block;
       margin: 1rem auto;
-      background: #f1c40f;
+      background: var(--main-color);
       color: #000;
       text-decoration: none;
       padding: 1rem 2rem;
       border-radius: 8px;
       font-weight: bold;
-      transition: background 0.3s;
+      transition: all 0.3s;
     }
-    .contact a:hover {
+
+    .contact a.button:hover {
       background: #ffda44;
+      transform: scale(1.05);
     }
+
+    /* Galerie */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
-      background: #222;
+      background: var(--dark);
       color: #aaa;
       font-size: 0.9rem;
     }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      main {
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Svářecí pohotovost – Jan Kučera</h1>
     <p>Profesionální svářeč s 20 lety praxe – ocel i nerez</p>
   </header>
+
   <main>
     <section>
       <h2>O mně</h2>
-      <p>Jsem zkušený svářeč s více než 20 lety praxe. Nabízím profesionální služby v oblasti svařování oceli a nerezu, broušení, vrtání a drobných oprav. Pracuji precizně, spolehlivě a s důrazem na kvalitu.</p>
+      <p>Jsem zkušený svářeč s více než 20 lety praxe. Nabízím profesionální služby v oblasti svařování oceli a nerezu, broušení, vrtání a drobných oprav. Pracuji precizně, spolehlivě a s důrazem na kvalitu. Každou zakázku beru individuálně a hledám praktické řešení podle potřeb zákazníka.</p>
     </section>
 
     <section>
@@ -91,14 +166,26 @@
       </ul>
     </section>
 
+    <section>
+      <h2>Galerie</h2>
+      <div class="gallery">
+        <img src="images/prace1.jpg" alt="Ukázka práce 1">
+        <img src="images/prace2.jpg" alt="Ukázka práce 2">
+        <img src="images/prace3.jpg" alt="Ukázka práce 3">
+        <img src="images/prace4.jpg" alt="Ukázka práce 4">
+      </div>
+      <p style="text-align:center; color:#777; margin-top:0.5rem;">(Do složky <strong>images/</strong> vložte své fotografie – automaticky se zobrazí zde.)</p>
+    </section>
+
     <section class="contact">
       <h2>Kontakt</h2>
       <p><strong>Jan Kučera</strong></p>
-      <p>Havířov</p>
-      <p>📞 <a href="tel:+420721007325">Zavolat – +420 721 007 325</a></p>
+      <p>📍 Havířov</p>
+      <p>📞 <a class="button" href="tel:+420721007325">Zavolat – +420 721 007 325</a></p>
       <p>✉️ <a href="mailto:kucera.jan85@post.cz">kucera.jan85@post.cz</a></p>
     </section>
   </main>
+
   <footer>
     © 2025 Jan Kučera – Svářecí pohotovost | Havířov
   </footer>
