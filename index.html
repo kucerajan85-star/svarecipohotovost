@@ -1,193 +1,244 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Svářecí pohotovost – Jan Kučera</title>
-  <meta name="description" content="Svářecí pohotovost v Havířově – Jan Kučera. Profesionální svářeč s 20 lety praxe. Ocel, nerez, opravy a zakázková práce." />
-  <meta property="og:title" content="Svářecí pohotovost – Jan Kučera" />
-  <meta property="og:description" content="Profesionální svářeč s 20 lety praxe – ocel i nerez." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="cs_CZ" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <style>
-    :root {
-      --main-color: #f1c40f;
-      --dark: #222;
-      --light-bg: #f5f5f5;
-      --white: #fff;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-      background: var(--light-bg);
-      color: var(--dark);
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-    }
-
-    header {
-      background: linear-gradient(135deg, var(--dark), #333);
-      color: var(--white);
-      text-align: center;
-      padding: 3rem 1rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      color: #ddd;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: var(--dark);
-      border-left: 6px solid var(--main-color);
-      padding-left: 0.7rem;
-      margin-bottom: 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li::before {
-      content: "✔️";
-      margin-right: 0.5rem;
-      color: var(--main-color);
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact a.button {
-      display: inline-block;
-      margin: 1rem auto;
-      background: var(--main-color);
-      color: #000;
-      text-decoration: none;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: all 0.3s;
-    }
-
-    .contact a.button:hover {
-      background: #ffda44;
-      transform: scale(1.05);
-    }
-
-    /* Galerie */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: var(--dark);
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.6rem;
-      }
-      main {
-        padding: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-  <header>
-    <h1>Svářecí pohotovost – Jan Kučera</h1>
-    <p>Profesionální svářeč s 20 lety praxe – ocel i nerez</p>
+  <header class="header">
+    <div class="inner">
+      <div class="brand">
+        <div class="logo">SP</div>
+        <div>
+          <h1>Svářecí pohotovost</h1>
+          <p>Jan Kučera — Havířov · 20 let praxe</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Domů</a>
+        <a href="about.html">O mně</a>
+        <a href="services.html">Služby</a>
+        <a href="gallery.html">Galerie</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>O mně</h2>
-      <p>Jsem zkušený svářeč s více než 20 lety praxe. Nabízím profesionální služby v oblasti svařování oceli a nerezu, broušení, vrtání a drobných oprav. Pracuji precizně, spolehlivě a s důrazem na kvalitu. Každou zakázku beru individuálně a hledám praktické řešení podle potřeb zákazníka.</p>
-    </section>
-
-    <section>
-      <h2>Nabízené služby</h2>
-      <ul>
-        <li>Sváření oceli a nerezu</li>
-        <li>Broušení a vrtání</li>
-        <li>Drobné opravy a úpravy kovových dílů</li>
-        <li>Zakázková práce podle potřeby zákazníka</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Galerie</h2>
-      <div class="gallery">
-        <img src="images/prace1.jpg" alt="Ukázka práce 1">
-        <img src="images/prace2.jpg" alt="Ukázka práce 2">
-        <img src="images/prace3.jpg" alt="Ukázka práce 3">
-        <img src="images/prace4.jpg" alt="Ukázka práce 4">
+  <main class="container">
+    <section class="hero card">
+      <div class="hero-left">
+        <h2>Svářecí pohotovost — když kov potřebuje první pomoc</h2>
+        <p class="lead">Jsem zkušený svářeč se 20 lety praxe. Nabízím svařování oceli i nerezu, broušení, vrtání a opravy — v dílně i mobilně u zákazníka.</p>
+        <div class="cta-row">
+          <a class="btn" href="tel:+420721007325">📞 Zavolat – 721 007 325</a>
+          <a class="btn-ghost" href="contact.html">✉️ Napsat poptávku</a>
+        </div>
       </div>
-      <p style="text-align:center; color:#777; margin-top:0.5rem;">(Do složky <strong>images/</strong> vložte své fotografie – automaticky se zobrazí zde.)</p>
+
+      <aside class="hero-right card" style="margin-left:auto;">
+        <h3>Rychlé služby</h3>
+        <div class="quick-contact">
+          <p><strong>Mobilní zásahy</strong> – přijedu a opravím u vás</p>
+          <p><strong>Výroba dílů</strong> – přesné úpravy a náhradní díly</p>
+          <p class="small">Pracuji pro domácnosti, dílny a malé firmy. Férové ceny, kvalita a rychlost.</p>
+        </div>
+      </aside>
     </section>
 
-    <section class="contact">
-      <h2>Kontakt</h2>
-      <p><strong>Jan Kučera</strong></p>
-      <p>📍 Havířov</p>
-      <p>📞 <a class="button" href="tel:+420721007325">Zavolat – +420 721 007 325</a></p>
-      <p>✉️ <a href="mailto:kucera.jan85@post.cz">kucera.jan85@post.cz</a></p>
+    <section class="section">
+      <div class="card">
+        <h3>Proč Svářecí pohotovost?</h3>
+        <p class="small">20 let praxe, vlastní dílna v Havířově, profesionální přístup a mobilita. Nejčastěji opravím brány, zábradlí, rámové konstrukce a drobné strojní součásti.</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    © 2025 Jan Kučera – Svářecí pohotovost | Havířov
+    © 2025 Svářecí pohotovost — Jan Kučera · Havířov · <a href="contact.html">Kontakt</a>
   </footer>
+</body>
+</html>
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O mně — Svářecí pohotovost</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="inner">
+      <div class="brand"><div class="logo">SP</div><div><h1>Svářecí pohotovost</h1><p>Jan Kučera</p></div></div>
+      <nav class="nav">
+        <a href="index.html">Domů</a><a href="about.html">O mně</a><a href="services.html">Služby</a><a href="gallery.html">Galerie</a><a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card section">
+      <h3>O mně</h3>
+      <p>Jmenuji se <strong>Jan Kučera</strong> a pracuji jako svářeč již více než <strong>20 let</strong>. Mám vlastní dílnu v Havířově a široké zkušenosti se svařováním oceli i nerezu. Nabízím pevné a estetické sváry, opravy konstrukcí i zakázkovou výrobu drobných dílů.</p>
+
+      <h3>Co je pro mě důležité</h3>
+      <ul class="small">
+        <li>Přesnost a bezpečnost</li>
+        <li>Rychlá komunikace a férové ceny</li>
+        <li>Možnost mobilního zásahu u zákazníka</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Svářecí pohotovost — Jan Kučera · Havířov
+  </footer>
+</body>
+</html>
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Služby — Svářecí pohotovost</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="inner"><div class="brand"><div class="logo">SP</div><div><h1>Svářecí pohotovost</h1></div></div>
+      <nav class="nav"><a href="index.html">Domů</a><a href="about.html">O mně</a><a href="services.html">Služby</a><a href="gallery.html">Galerie</a><a href="contact.html">Kontakt</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section card">
+      <h3>Co nabízím</h3>
+
+      <div class="grid services-grid">
+        <div class="service">
+          <h4>Sváření oceli a nerezu</h4>
+          <p>Silné, trvanlivé sváry pro konstrukce i strojní díly.</p>
+        </div>
+
+        <div class="service">
+          <h4>Broušení a dorovnání</h4>
+          <p>Dokončovací práce, leštění a příprava povrchů.</p>
+        </div>
+
+        <div class="service">
+          <h4>Vrtání a drobné montáže</h4>
+          <p>Přesné vrtání, řezání a fixace dílů.</p>
+        </div>
+
+        <div class="service">
+          <h4>Opravy bran, zábradlí a rámů</h4>
+          <p>Funkční opravy i estetické úpravy.</p>
+        </div>
+
+        <div class="service">
+          <h4>Výroba zakázkových dílů</h4>
+          <p>Jednorázové díly dle rozměrů zákazníka.</p>
+        </div>
+
+        <div class="service">
+          <h4>Mobilní zásahy</h4>
+          <p>Přijedu do lokality Havířov a okolí a opravím na místě.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Svářecí pohotovost — Jan Kučera</footer>
+</body>
+</html>
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galerie — Svářecí pohotovost</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="inner"><div class="brand"><div class="logo">SP</div><div><h1>Svářecí pohotovost</h1></div></div>
+      <nav class="nav"><a href="index.html">Domů</a><a href="about.html">O mně</a><a href="services.html">Služby</a><a href="gallery.html">Galerie</a><a href="contact.html">Kontakt</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section card">
+      <h3>Galerie</h3>
+      <p class="small">Nasdílej sem fotky: nahraj je do složky <code>images/</code> a pojmenuj např. <code>foto1.jpg</code>, <code>foto2.jpg</code>.</p>
+      <div class="gallery-grid">
+        <!-- příklad: <img src="images/foto1.jpg" alt="Ukázka práce"> -->
+        <div style="padding:20px; color:var(--muted); background:var(--card); border-radius:10px">Zatím žádné fotky — nahraj svoje ukázky do složky /images/</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Svářecí pohotovost — Jan Kučera</footer>
+</body>
+</html>
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontakt — Svářecí pohotovost</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="inner"><div class="brand"><div class="logo">SP</div><div><h1>Svářecí pohotovost</h1></div></div>
+      <nav class="nav"><a href="index.html">Domů</a><a href="about.html">O mně</a><a href="services.html">Služby</a><a href="gallery.html">Galerie</a><a href="contact.html">Kontakt</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section card">
+      <h3>Kontaktujte mě</h3>
+      <p class="small">Popište co potřebujete a já se ozvu zpět.</p>
+
+      <form name="contact" method="POST" data-netlify="true" class="form">
+        <input type="hidden" name="form-name" value="contact">
+        <label>
+          Jméno
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Popis práce / dotaz
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit" class="btn">Odeslat poptávku</button>
+      </form>
+
+      <hr style="margin:18px 0; border-color: rgba(255,255,255,0.03)">
+
+      <div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap">
+        <div style="flex:1; min-width:220px">
+          <p><strong>Jan Kučera</strong></p>
+          <p>Havířov</p>
+          <p>📞 <a href="tel:+420721007325">721 007 325</a></p>
+          <p>✉️ <a href="mailto:kucera.jan85@post.cz">kucera.jan85@post.cz</a></p>
+        </div>
+
+        <div class="map-wrap" style="flex:2; min-width:260px">
+          <!-- Google Maps embed pro Havířov (upravit podle potřeby) -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.307780149298!2d18.42916481563309!3d49.77688367941319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712b2f1c9c6b1b7%3A0xa7d3c9d1e3b8b4d!2sHavířov!5e0!3m2!1scs!2scz!4v1698230000000!5m2!1scs!2scz"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Svářecí pohotovost — Jan Kučera</footer>
 </body>
 </html>
