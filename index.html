@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -92,6 +93,16 @@
       position: absolute;
       left: 0;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
@@ -101,9 +112,14 @@
     <p>Profesionální sváření oceli i nerezu – Havířov a okolí</p>
   </header>
 
+  <div style="text-align:center; margin-top:1rem;">
+    <img src="welder-icon.png" alt="Svářeč" style="width:120px; opacity:0.9;" />
+  </div>
+
   <nav>
     <a href="#omne">O mně</a>
     <a href="#sluzby">Služby</a>
+    <a href="#galerie">Galerie</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
 
@@ -119,7 +135,16 @@
       <li>Broušení, vrtání, řezání kovových materiálů</li>
       <li>Výroba a opravy konstrukcí, zábradlí, rámů apod.</li>
       <li>Mobilní svářecí pohotovost – opravy u vás</li>
+      <li>Pískování oceli i nerezu</li>
     </ul>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <p>Zde budou umístěny fotografie vaší práce nebo projektů.</p>
+    <div class="gallery">
+      <!-- Na fotky můžete později vložit <img src="fotka.jpg" alt="Popis"> -->
+    </div>
   </section>
 
   <section id="kontakt">
@@ -127,13 +152,13 @@
     <div class="contact-info">
       <p><strong>Jan Kučera</strong></p>
       <p>Havířov</p>
-      <p>📞 721 007 325</p>
+      <p>📞 +420 721 007 325</p>
       <p>✉️ <a href="mailto:kucera.jan85@post.cz">kucera.jan85@post.cz</a></p>
     </div>
 
     <div class="map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10058.282015433176!2d18.420763!3d49.780382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e0ad7f0cf69f%3A0x400af0f6614b480!2sHavířov!5e0!3m2!1scs!2scz!4v1698258559349!5m2!1scs!2scz"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2534.639698938076!2d18.4369!3d49.7800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e0ad7f0cf69f%3A0x400af0f6614b480!2sHavířov!5e0!3m2!1scs!2scz!4v1698258559349!5m2!1scs!2scz"
         allowfullscreen=""
         loading="lazy">
       </iframe>
@@ -143,6 +168,5 @@
   <footer>
     © 2025 Jan Kučera – Svářečská pohotovost | Havířov
   </footer>
-
 </body>
 </html>
